@@ -1,9 +1,29 @@
 import express from "express";
 import { v4 as uuidv4 } from 'uuid';
+import { userGET } from "../controlers/users";
 // uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+
+/**
+ * import { userGET } from "../controlers/users";
+ * import { userPOST } from "../controlers/users";
+ * import { userById } from "../controlers/users";
+ * import { userDELETE } from "../controlers/users";
+ * import { userUPDATE } from "../controlers/users";
+ */
+
 
 
 const  router =  express.Router();
+
+/**
+ * ====> BEST WAYS 
+ * router.get("/",userGET);
+ * router.post("/",userPOST);
+ * router.get("/",userGetById);
+ * router.delete("/",userDELETE);
+ * router.patch("/",userUPDATE);
+ */
+
 
 let users = [
     // {
